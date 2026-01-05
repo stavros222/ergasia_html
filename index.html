@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Τηλεαγορές</title>
+        <style>
+            body{
+                background-color:aliceblue;
+                padding-top:135px;
+                margin-right:0;
+            }
+            header, footer{
+                text-align: center;
+                background-color: goldenrod;
+                color:rgb(17, 0, 255);
+            }
+            footer{
+                height:5vh;
+                width:97vw;
+                min-width: 200px;
+            }
+            footer p{
+                padding: 10px;
+            }
+            header{
+                position:fixed;
+                top:0px;
+                left:0px;
+                width:100vw;
+                border-bottom-left-radius:100px;
+                border-bottom-right-radius:100px;
+                z-index:10;
+                overflow: hidden;
+                flex-wrap: wrap;
+                min-width: 200px;
+            }
+            header h1{
+                color:white;
+            }
+            section{
+                width:97vw;
+            }
+            #hero{
+                color: beige;
+                text-align:center;
+                width:97vw;
+                height:20vh;
+                background-image:url("/images/nature.jpg");
+                background-position: center;
+                background-size: cover;
+                min-width: 200px;
+            }
+            #about{
+                width:97vw;
+                margin-bottom:50px;
+                background-color: gray;
+                color:wheat;
+                display: flex;
+                gap:2px;
+                min-width:200px;
+                margin-top:0px;
+            }
+            .about{
+                background-color: darkslategray;
+                border-radius:10px;
+                padding: 10px 5px;
+                width:50%;
+                text-align:center;
+            }
+            .mission{
+                background-color: darkslategray;
+                border-radius:10px;
+                padding: 10px 5px;
+                width:50%;
+                text-align: center;
+            }
+            #about::after{
+                content:"";
+                display: block;
+                clear: both;
+            }
+            #catalog{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:10px;
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+            #catalog div{
+                background-color: rgb(120, 190, 190);
+                border-radius: 10px;
+                padding-bottom:10px;
+                padding-top:10px;
+            }
+            #catalog div:hover{
+                background-color: blue;
+            }
+            #catalog-s{
+                margin:50px 0px;
+                text-align: center;
+                background-color:grey;
+                padding-bottom: 10px;
+                padding-top: 5px;
+                overflow:hidden;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius:30px ;
+                min-width: 200px;
+            }
+            #media{
+                margin-top:50px;
+                background-color:black;
+                aspect-ratio: 10/8;
+                overflow: hidden;
+                min-width:200px;
+            }
+            #media video{
+                width:50%;
+                height:70%;
+                margin:20px 25vw;
+            }
+            .hide{
+                transform: translateY(-100%);
+            }
+            #other_services{
+                display:flex;
+                gap:10px;
+                width:90vw;
+                margin:0px 5vh;
+                height:40vh;
+                justify-content: center;
+                align-items: stretch;
+                min-width:200px;
+            }
+            #services h2{
+                text-align: center;
+            }
+            #other_services div{
+                background-color: burlywood;
+                width:33%;
+                text-align: center;
+                border-radius:10px;
+
+            }
+            #other_services div:hover{
+                width:43%;
+                height:110%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav><p><a href="">login</a>/<a href="">contact us</a>/<a href="">help</a></nav>
+            <h1>Τηλεαγορές</h1>
+        </header>
+        <div id="hero">
+            <h1>Καλώς ήρθατε στην εταιρία τηλεαγορές</h1>
+        </div>
+        <section id="about">
+            <div class="about">
+                <p><h2>Τι είναι η εταιρία: </h2></p>
+                <p><strong>Η τηλεαγορές είναι μια αταιρία που πουλάει προϊόντα στο δυαδίκτιο σε οικονομική τιμή</strong></p>
+            </div>
+            <div class="mission">
+                <p><h2>Σκοπός της αταιρίας είναι</h2></p>
+                <p><strong>Σκοπός της εταιρίας είναι να προτίνει τις πιο οικονομικές τιμές της αγόρας στους πελάτες της</strong></p>
+            </div>
+        </section>
+        <section id="catalog-s">
+            <h2>Κατάλογος</h2>
+            <div id="catalog">
+                <div>Υπολογιστές</div>
+                <div>Ρούχα</div>
+                <div>Τηλέφωνα</div>
+                <div>Laptop</div>
+                <div>Κοσμήματα</div>
+                <div>Σχετικά με τεχνολογία</div>
+            </div>
+        </section>
+        <section id="services">
+        <h2>Άλλες υπηρεσίες</h2>
+            <section id="other_services">
+                <div>Βοήθεια από εκπρόσωπο</div>
+                <div>Αναφορά προϊόντος</div>
+                <div>Αναφορά βλάβης</div>
+            </section>
+        </section>
+        <section id="media">
+            <video controls>
+                <source src="/videos/promo.mp4" srcset="/videos/promo.mp4 400w,/videos/promo.mp4 300w" size="(max-width:600) 10%, (max-width:12085) 20%">
+            </video>
+        </section>
+       
+        <footer>
+            <p><small> &copy; Τηλεαγορές-όλα τα δικαιώματα διατηρούνται</small></p>
+        </footer>
+        <script>
+            const header= document.querySelector("header");
+            const scroll= 0//window.scrollY;
+            window.addEventListener("scroll",()=>{
+                var scroll2=window.scrollY;
+                var goingDown= scroll2>scroll;
+                if(scroll2>20 && goingDown){
+                    header.classList.add("hide");
+                }
+                else{
+                    header.classList.remove("hide");
+                }
+            })
+        </script>
+    </body>
+</html>
